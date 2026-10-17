@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(LupoSession)</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Container für Bild und Links */
+        .image-container {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+
+        /* Bild skaliert nach Option 3 */
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Gemeinsame Basis für alle unsichtbaren Links */
+        .social-link {
+            position: absolute;
+            cursor: pointer;
+            
+            /* HINWEIS: Zum Testen sind die Boxen hier rot gefärbt. */
+            /* Wenn alles passt, löschen Sie einfach die nächste Zeile! */
+        /*  background: rgba(255, 0, 0, 0.4); */ 
+        }
+
+        /* 
+           POSITIONIERUNG AM UNTEREN RAND
+           Passen Sie 'top', 'width' und 'height' für alle Boxen gleichzeitig an,
+           falls Ihre Icons höher, tiefer, breiter oder schmaler sind.
+        */
+        .social-link {
+            top: 89%;      /* Abstand vom oberen Bildrand für ALLE Icons */
+            width: 8%;     /* Breite jeder klickbaren Box */
+            height: 5%;    /* Höhe jeder klickbaren Box */
+        }
+
+        /* ABSTÄNDE VON LINKS (HORIZONTALE REIHE) */
+        .facebook-link   { left:  2.4%; }
+        .tiktok-link     { left: 16%; }
+        .x-link          { left: 31.2%; }
+        .youtube-link    { left: 48.5%; }
+        .instagram-link  { left: 66%; }
+        .soundcloud-link { left: 85%; }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <!-- Ihr Hauptbild -->
+        <img src="home-luposession.jpg" alt="Featured Image" class="main-image">
+
+        <!-- Die 6 klickbaren Social-Media-Zonen -->
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link facebook-link" title="Facebook"></a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link tiktok-link" title="TikTok"></a>
+        <a href="https://x.com" target="_blank" rel="noopener" class="social-link x-link" title="X (Twitter)"></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link youtube-link" title="YouTube"></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link instagram-link" title="Instagram"></a>
+        <a href="https://soundcloud.com" target="_blank" rel="noopener" class="social-link soundcloud-link" title="SoundCloud"></a>
+    </div>
+
+</body>
+</html>
